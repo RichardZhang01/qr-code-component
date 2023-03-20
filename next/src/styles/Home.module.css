@@ -1,3 +1,14 @@
+@font-face {
+  font-family: Outfit;
+  src: url(/Outfit-Regular.ttf)
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(/Outfit-Bold.ttf);
+  font-weight: bold;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -9,27 +20,38 @@
 }
 
 .card {
-  padding: 1rem 1.2rem;
-  max-width: 20%;
-  border-radius: var(--border-radius);
+  padding: 1rem;
+  border-radius: 20px;
+  max-width: 300px;
   background-color: hsl(0, 0%, 100%)
 }
 
 .card h1 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
+  font-family: Outfit;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  color: hsl(218, 44%, 22%);
+
+  padding-inline: 7px;
+  margin-bottom: 15px;
 }
 
 .card p {
-  margin: 0;
-  opacity: 0.6;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
+  font-family: Outfit;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: hsl(220, 15%, 55%);
+
+  padding-inline: 8px;
+  margin-bottom: 20px;
 }
 
 .qrCode {
   width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 .center {
@@ -37,11 +59,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 /* Mobile */
-@media (max-width: 700px) {
+/* @media (max-width: 375px) {
   .card {
     padding: 1rem 2.5rem;
   }
@@ -53,5 +74,5 @@
   .center {
     padding: 8rem 0 6rem;
   }
-}
+} */
 
