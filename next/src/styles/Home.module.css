@@ -62,17 +62,26 @@
 }
 
 /* Mobile */
-/* @media (max-width: 375px) {
+@media (max-width: 375px) {
   .card {
-    padding: 1rem 2.5rem;
+    margin: 1rem;
   }
 
   .card h1 {
-    margin-bottom: 0.5rem;
+    padding-inline: 30px;
+  }
+
+  .card p {
+    padding-inline: 30px;
   }
 
   .center {
-    padding: 8rem 0 6rem;
+    padding: 1rem 0rem 1rem 0rem;
   }
-} */
 
+  .qrCode {
+    width: 90%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+  }
+}
