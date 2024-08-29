@@ -1,11 +1,11 @@
 @font-face {
   font-family: Outfit;
-  src: url(/Outfit-Regular.ttf)
+  src: url(/qr-code-component/Outfit-Regular.ttf)
 }
 
 @font-face {
   font-family: Outfit;
-  src: url(/Outfit-Bold.ttf);
+  src: url(/qr-code-component/Outfit-Bold.ttf);
   font-weight: bold;
 }
 

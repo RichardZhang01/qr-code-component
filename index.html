@@ -10,15 +10,110 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    /* Global Styles */
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    html, body {
+      max-width: 100vw;
+      overflow-x: hidden;
+    }
+
+    /* Card styles */
+    @font-face {
+      font-family: Outfit;
+      src: url("./next/public/Outfit-Regular.ttf");
+    }
+
+    @font-face {
+      font-family: Outfit;
+      src: url("./next/public/Outfit-Bold.ttf");
+      font-weight: bold;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: hsl(212, 45%, 89%);
+    }
+
+    .card {
+      padding: 1rem;
+      border-radius: 20px;
+      max-width: 300px;
+      background-color: hsl(0, 0%, 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card h1 {
+      font-family: Outfit;
+      font-weight: 700;
+      font-size: 20px;
+      text-align: center;
+      color: hsl(218, 44%, 22%);
+      padding-inline: 7px;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-family: Outfit;
+      font-weight: 400;
+      font-size: 15px;
+      text-align: center;
+      color: hsl(220, 15%, 55%);
+      padding-inline: 8px;
+      margin-bottom: 20px;
+    }
+
+    .qrCode {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    /* Mobile */
+    @media (max-width: 375px) {
+      .card {
+        margin: 1rem;
+      }
+
+      .card h1 {
+        padding-inline: 30px;
+      }
+
+      .card p {
+        padding-inline: 30px;
+      }
+
+      .qrCode {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+    }
+
+    /* Attribution styles */
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+  <main>
+    <div class="card">
+      <img class="qrCode" src="./images/image-qr-code.png" alt="QR Code" />
+      <h1>Improve your front-end skills by building projects</h1>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

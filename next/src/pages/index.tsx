@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -15,10 +15,10 @@ export default function Home() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             className={styles.qrCode}
-            src="/image-qr-code.png"
+            src="/qr-code-component/image-qr-code.png"
             alt="QR Code"
           />
-          <h1>Improve your front-end skills by bulding projects</h1>
+          <h1>Improve your front-end skills by building projects</h1>
           <p>
             Scan the QR code to visit Frontend Mentor and take your coding
             skills to the next level
