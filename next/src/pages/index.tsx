@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Card from "../components/Card";
 
 export default function Home() {
   return (
@@ -11,19 +12,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={`${styles.card} ${styles.center}`}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            className={styles.qrCode}
-            src="/qr-code-component/image-qr-code.png"
-            alt="QR Code"
-          />
-          <h1>Improve your front-end skills by building projects</h1>
-          <p>
-            Scan the QR code to visit Frontend Mentor and take your coding
-            skills to the next level
-          </p>
-        </div>
+        <Card
+          imgSrc="/image-qr-code.png"
+          imgAltText="QR Code"
+          headerText="Improve your front-end skills by building projects"
+          paragraphText="Scan the QR code to visit Frontend Mentor and take your coding skills to the next level"
+        />
       </main>
     </>
   );
