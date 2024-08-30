@@ -32,5 +32,5 @@ This is a component for a basic card with a QR code image, and some text underne
 ## Author
 
 - Frontend Mentor - [@RichardZhang01](https://www.frontendmentor.io/profile/RichardZhang01)
-- Linkedin - [@yRichardZhang](https://www.linkedin.com/in/richard-zhiyuan-zhang/)
+- Linkedin - [@RichardZhang](https://www.linkedin.com/in/richard-zhiyuan-zhang/)
 
